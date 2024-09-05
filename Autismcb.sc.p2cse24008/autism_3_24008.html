@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Thoughts vs. Bad Thoughts</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+
+    header {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #header {
+        position: relative;
+    }
+
+    #logo {
+        width: 150px;
+        height: auto;
+    }
+
+    h1 {
+        color: yellow;
+        margin: 0;
+    }
+
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #intro h2 {
+        color: #333;
+    }
+
+    #game {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-box  {
+        background: #fff;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 220px; 
+        height: 320px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .image-box img {
+        width: 200px; 
+        height: 220px; 
+        object-fit: cover; 
+        border: 3px solid #ff0; 
+        border-radius: 10px;
+        margin-bottom: 10px; 
+    }
+
+    .image-box button {
+        background-color: #4682b4;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        margin: 5px 0; 
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .image-box button:hover {
+        background-color: #315f8e;
+    }
+
+    footer {
+        background-color: #4682b4;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <img src="https://three-principles.com/wp-content/uploads/2018/03/thoughts.png" alt="Autism Logo" id="logo">
+            <h1>Autism Kids: Beauty of Thoughts</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Good Thoughts vs. Bad Thoughts</h2>
+            <p>Select which images represent good thoughts and which represent bad thoughts. Have fun learning!</p>
+        </section>
+
+        <section id="game">
+            <div class="image-container">
+                <div class="image-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0a6MSsaD7owLgoBNvwns-k_5iqOeNV0MIPagdcUMEEWNcFhOBDrCsGzUrbby63R3W8A&usqp=CAU">
+                    <p>Joyful</p>
+                    <button onclick="markAsGood('Joyful')">Click here what type of thought it is</button>
+                </div>
+                 <div class="image-box">
+                    <img src="https://media.istockphoto.com/id/1386825389/photo/this-class-is-exhausting.jpg?s=612x612&w=0&k=20&c=xRDnLIW3wCVxLjRs3OM_UkSCmQy-q_xrzzrfGA9DSu0=" alt="Classroom Sleeping">
+                    <p>Classroom Sleeping</p>
+                    <button onclick="markAsBad('Classroom Sleeping')">Click here what type of thought it is</button>
+                </div>
+
+                <div class="image-box">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM3RaLFqibwYBWNalOWVft40C7_BWgDdxtNsD7ruvKcEKnaNLve3peCSjR0jkwxOH6ds7q4fbXsElqBsZ3MOoa5DLFi1wELnOKzZoaNAXNYcjsALghQvCJ8jaa6HiO7GAAL0vN1MO0UiSW/w1200-h630-p-k-no-nu/cartoon-thoughts-to-actions-to-results.jpg" alt="Positive Outcome">
+                    <p>Positive Outcome</p>
+                    <button onclick="markAsGood('Positive Outcome')">Click here what type of thought it is</button>
+                </div>
+                <div class="image-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZQccIntQnlHNC928pziPncFOtwHPxfucvQ&">
+                    <p>Stolen</p>
+                    <button onclick="markAsBad('Stolen')">Click here what type of thought it is</button>
+                </div>
+                <div class="image-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXf0Z6g0lfmnpokTRcSu6vHwDxAMHygr7Iiw&s" alt="Respect Each other">
+                    <p>Respect Each other</p>
+                    <button onclick="markAsGood('Respect Each other')">Click here what type of thought it is</button>
+                </div>
+
+
+                <div class="image-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7OmigYRKs64dtvJyOL444g5KteJSD9zPSg&s" alt="Fighting">
+                    <p>Fighting</p>
+                    <button onclick="markAsBad('Fighting')">Click here what type of thought it is</button>
+                </div>
+
+                <div class="image-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-_9rl4cBoMxpleVaKfs5G2Lpdql2DZFW7Q&s" alt="Joyful">
+                    <p>Joyful</p>
+                    <button onclick="markAsGood('Joyful')">Click here what type of thought it is</button>
+                </div>
+                <div class="image-box">
+                    <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-83442,resizemode-75,msid-64905006/news/politics-and-nation/fear-of-child-lifting-not-completely-unfounded-55000-children-kidnapped-in-2016-in-india.jpg" alt="Kidnapping">
+                    <p>Kidnapping</p>
+                    <button onclick="markAsBad('Kidnapping')">Click here what type of thought it is</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; good-bad thoughts.</p>
+    </footer>
+
+    <script>
+        function markAsGood(thought) {
+            alert(thought + " is a Good Thought!");
+        }
+
+        function markAsBad(thought) {
+            alert(thought + " is a Bad Thought!");
+        }
+    </script>
+</body>
+</html>
